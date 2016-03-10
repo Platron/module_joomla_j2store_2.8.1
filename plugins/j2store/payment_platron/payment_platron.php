@@ -81,6 +81,7 @@ class plgJ2StorePayment_platron extends J2StorePaymentPlugin
 			'pg_success_url'		=> $this->params->get("success_url",''),
 			'pg_failure_url'		=> $this->params->get("failure_url",''),
 			'pg_request_method'		=> 'GET',
+			'cms_payment_module'	=> 'J2STORE';
 			'pg_salt'				=> rand(21,43433), // Параметры безопасности сообщения. Необходима генерация pg_salt и подписи сообщения.
 		);
 
